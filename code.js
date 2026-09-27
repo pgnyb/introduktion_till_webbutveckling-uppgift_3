@@ -1,14 +1,11 @@
-document.getElementById("eventBtn").addEventListener(
-    "click",
+document.getElementById("eventBtn").addEventListener("click", function () {
+    const h1 = document.getElementById("h1Text");
 
-    function manipulateH1() {
-        if (document.getElementById("h1Text").innerHTML === "Hello World.") {
-            document.getElementById("h1Text").style.color = "red";
-            document.getElementById("h1Text").innerHTML = "Goodbye World."
+    if (h1.innerHTML === "Hello World.") {
+        h1.innerHTML = "Goodbye World.";
+        h1.classList.add("goodbye");
+    } else {
+        h1.innerHTML = "Hello World.";
+        h1.classList.remove("goodbye");
     }
-    else {
-        document.getElementById("h1Text").style.color = "black";
-        document.getElementById("h1Text").innerHTML = "Hello World."}
-    }
-
-);
+});

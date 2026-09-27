@@ -1,0 +1,11 @@
+h1 {
+    color: black;
+}
+
+h1.goodbye {
+    color: red;
+}
+
+button {
+    cursor: pointer;
+}
